@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "stdbool.h": "c",
-        "surveyorswheel_pio_util.h": "c"
+        "surveyorswheel_pio_util.h": "c",
+        "systemcontrol.h": "c"
     }
 }

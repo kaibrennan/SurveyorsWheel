@@ -148,3 +148,13 @@ void GPIOF_setup(void)
 	/* Configure pins as inputs, with pull-up. */
 	gpio_mode_setup(GPIOF, GPIO_MODE_INPUT, GPIO_PUPD_PULLUP, btnpins);
 }
+// all code above this point is from 251
+
+void encoder_setup(void) {
+	// REQUIRED for GPIOB on LM4F
+	gpio_enable_ahb_aperture();
+	// Turn on clock to GPIOB
+	periph_clock_enable(RCC_GPIOB);
+	// Set PB2 as input, no pull resistors
+	gpio_mode_setup(GPIOB, GPIO_MODE_INPUT, GPIO_PUPD_NONE, GPIO2);
+}

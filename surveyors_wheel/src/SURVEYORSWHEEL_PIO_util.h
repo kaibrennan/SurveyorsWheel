@@ -25,3 +25,6 @@ void UARTprintf(const char*, ...);
 unsigned char UARTgetc(void);
 unsigned char UARTgetc_echo(void);
 void GPIOF_setup(void);
+// all above code is from my 251 labs
+//new function for encoder setup
+void encoder_setup(void);
